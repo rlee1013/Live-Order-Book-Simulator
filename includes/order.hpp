@@ -12,6 +12,8 @@ class Order {
     public:
         Order(OrderSide os, OrderType ot, std::string asset, 
             float price, size_t number_of_shares, time_t order_time);
+        OrderSide GetSide();
+        OrderType GetType();
         std::string GetAsset();
         float GetPrice();
         size_t GetNumberOfShares();

@@ -14,6 +14,14 @@ Order::Order(OrderSide os,
     , order_time_(order_time) 
 { }
 
+OrderSide Order::GetSide() {
+    return order_side_;
+}
+
+OrderType Order::GetType() {
+    return order_type_;
+}
+
 std::string Order::GetAsset() {
     return asset_;
 }
